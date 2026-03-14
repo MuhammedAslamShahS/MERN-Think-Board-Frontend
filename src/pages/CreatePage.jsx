@@ -13,10 +13,10 @@ const CreatePage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // if (!title.trim() || !content.trim()) {
-        //     toast.error("Please fill in both title and content");
-        //     return;
-        // }
+        if (!title.trim() || !content.trim()) {
+            toast.error("Please fill in both title and content");
+            return;
+        }
 
         setLoading(true);
 
